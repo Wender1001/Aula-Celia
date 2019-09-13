@@ -8,7 +8,7 @@ public class Exercicios {
 
     public static void main(String[] args) {
 
-            //   EXERCICIO 1
+        //   EXERCICIO 1
 //        int lista[]  = new int [7];
 //
 //
@@ -50,35 +50,101 @@ public class Exercicios {
 //        if(naoExiste){
 //            System.out.println("nao existe");
 //        }
+        //  EXERCICIO 3
+//        double[] numero = new double[10];
+//
+//        double media = 0;
+//
+//        ArrayList<Double> acimaDaMedia = new ArrayList<>();
+//
+//        Scanner leitura = new Scanner(System.in);
+//
+//        for(int contador = 0; contador < numero.length; contador++){
+//            System.out.println("digite um numero");
+//            numero[contador] = leitura.nextDouble();
+//            media+=numero[contador];
+//        }
+//        media/=numero.length;
+//
+//        for(int contador = 0; contador <numero.length;contador++){
+//            if(numero[contador] > media){
+//                acimaDaMedia.add( numero[contador]);
+//            }
+//
+//        }
+//        System.out.println("MEDIA :" + media);
+//        System.out.println("numeros acima da media" + acimaDaMedia);
+//
+        // EXERCICIO 4
 
+//        int dia = 0;
+//        int mes = 0;
+//
+//
+//        int total = 0;
+//
+//        int[] mounth = {31,28,30,31,30,31,30,31,30,31,30,31};
+//
+//        Scanner diaDoAno = new Scanner(System.in);
+//
+//
+//
+//        System.out.println("digite um dia de 1 á 31");
+//        dia = diaDoAno.nextInt();
+//        System.out.println(dia);
+//
+//        Scanner mesDoAno = new Scanner(System.in);
+//
+//
+//        System.out.println("digite um mes de 1 á 12");
+//        mes = mesDoAno.nextInt();
+//        System.out.println(mes);
+//
+//
+//        if(mes == 1){
+//            System.out.println(dia);
+//        }else{
+//
+//
+//
+//
+//           for(int contador = 0; contador <=mes; contador++){
+//
+//               int cont = mes-1;
+//            if(mes == contador){
+//            total += dia;
+//            }else{
+//                total +=mounth[contador];
+//            }
 
-        double[] numero = new double[10];
+        //EXERCICIO 5
+        int c = 0;
+        int valor;
+        int valorRepetido;
+        int[] valores =  new int[10];
+        int contador = 0;
 
-        double media = 0;
+        Scanner numero = new Scanner(System.in);
+        Scanner numeroRepetido = new Scanner(System.in);
 
-        ArrayList<Double> acimaDaMedia = new ArrayList<>();
-
-        Scanner leitura = new Scanner(System.in);
-
-        for(int contador = 0; contador < numero.length; contador++){
+        for( contador = 0; contador <valores.length;contador++) {
             System.out.println("digite um numero");
-            numero[contador] = leitura.nextDouble();
-            media+=numero[contador];
-        }
-        media/=numero.length;
+            valor = numero.nextInt();
+            valores[contador] = valor;
 
-        for(int contador = 0; contador <numero.length;contador++){
-            if(numero[contador] > media){
-                acimaDaMedia.add( numero[contador]);
+        }
+
+        System.out.println("digite um numero para validação");
+        valorRepetido = numeroRepetido.nextInt();
+
+        for(int i : valores){
+
+            if(valorRepetido == valores[i]){
+                c++;
             }
 
         }
-        System.out.println("MEDIA :" + media);
-        System.out.println("numeros acima da media" + acimaDaMedia);
+        System.out.println("o valor "+valorRepetido+ " se repete " + c +" vez");
 
-
-
-
-
-}
+    }
 }
