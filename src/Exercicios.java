@@ -118,33 +118,45 @@ public class Exercicios {
 //            }
 
         //EXERCICIO 5
-        int c = 0;
+        int c =0;
         int valor;
         int valorRepetido;
-        int[] valores =  new int[10];
-        int contador = 0;
+        int[] valores = new int[10];
+        int acao;
 
         Scanner numero = new Scanner(System.in);
         Scanner numeroRepetido = new Scanner(System.in);
 
-        for( contador = 0; contador <valores.length;contador++) {
+        for (int contador = 0; contador < valores.length; contador++) {
             System.out.println("digite um numero");
             valor = numero.nextInt();
             valores[contador] = valor;
 
         }
 
-        System.out.println("digite um numero para validação");
-        valorRepetido = numeroRepetido.nextInt();
+        do{
+            System.out.println("digite um numero para validação");
+            valorRepetido = numeroRepetido.nextInt();
 
-        for(int i : valores){
+            for (int i : valores) {
+                if (valorRepetido == i) {
 
-            if(valorRepetido == valores[i]){
-                c++;
+                    c++;
+
+                }
+
             }
+            System.out.println("o numero : " + valorRepetido + "ocorre " + c + " vezes");
+            System.out.println("oque deseja fazer ? 1-continuar; 2-sair");
+            acao = numero.nextInt();
 
-        }
-        System.out.println("o valor "+valorRepetido+ " se repete " + c +" vez");
+            c = 0;
+
+        } while (acao == 1);
+
+
+        System.out.println("Saindoooo");
+        System.exit(1);
 
     }
 }
