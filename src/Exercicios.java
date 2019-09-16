@@ -118,45 +118,66 @@ public class Exercicios {
 //            }
 
         //EXERCICIO 5
-        int c =0;
-        int valor;
-        int valorRepetido;
-        int[] valores = new int[10];
-        int acao;
+//        int c =0;
+//        int valor;
+//        int valorRepetido;
+//        int[] valores = new int[10];
+//        int acao;
+//
+//        Scanner numero = new Scanner(System.in);
+//        Scanner numeroRepetido = new Scanner(System.in);
+//
+//        for (int contador = 0; contador < valores.length; contador++) {
+//            System.out.println("digite um numero");
+//            valor = numero.nextInt();
+//            valores[contador] = valor;
+//
+//        }
+//
+//        do{
+//            System.out.println("digite um numero para validação");
+//            valorRepetido = numeroRepetido.nextInt();
+//
+//            for (int i : valores) {
+//                if (valorRepetido == i) {
+//
+//                    c++;
+//
+//                }
+//
+//            }
+//            System.out.println("o numero : " + valorRepetido + " ocorre " + c + " vezes");
+//            System.out.println("oque deseja fazer ? 1-continuar; 2-sair");
+//            acao = numero.nextInt();
+//
+//            c = 0;
+//
+//        } while (acao == 1);
+//
+//        System.out.println("Saindoooo");
+//        System.exit(200);
 
-        Scanner numero = new Scanner(System.in);
-        Scanner numeroRepetido = new Scanner(System.in);
+        String[] modelo =  new String[5];
+        int[] consumo = new int[5];
+        String carroEconomico;
+        int consumoEconomico;
+      //  String[] economico = new String[2];
 
-        for (int contador = 0; contador < valores.length; contador++) {
-            System.out.println("digite um numero");
-            valor = numero.nextInt();
-            valores[contador] = valor;
+        Scanner modeloCarro = new Scanner(System.in);
+        Scanner consumoCarro = new Scanner(System.in);
+
+        for(int contador = 0; contador <modelo.length; contador++){
+            System.out.println("modelo do carro : ");
+            modelo[contador] = modeloCarro.nextLine();
 
         }
 
-        do{
-            System.out.println("digite um numero para validação");
-            valorRepetido = numeroRepetido.nextInt();
+        for(int contador = 0; contador<consumo.length; contador++){
+            System.out.println("consumo do carro : ");
+            consumo[contador] = consumoCarro.nextInt();
+        }
 
-            for (int i : valores) {
-                if (valorRepetido == i) {
-
-                    c++;
-
-                }
-
-            }
-            System.out.println("o numero : " + valorRepetido + "ocorre " + c + " vezes");
-            System.out.println("oque deseja fazer ? 1-continuar; 2-sair");
-            acao = numero.nextInt();
-
-            c = 0;
-
-        } while (acao == 1);
-
-
-        System.out.println("Saindoooo");
-        System.exit(1);
+        for()
 
     }
 }
