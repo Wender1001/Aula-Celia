@@ -157,27 +157,68 @@ public class Exercicios {
 //        System.out.println("Saindoooo");
 //        System.exit(200);
 
-        String[] modelo =  new String[5];
-        int[] consumo = new int[5];
-        String carroEconomico;
-        int consumoEconomico;
-      //  String[] economico = new String[2];
+//        String[] modelo = new String[5];
+//        int[] consumo = new int[5];
+//        int consumoEconomico = 0;
+//        int indice = 0;
+//
+//
+//        Scanner modeloCarro = new Scanner(System.in);
+//        Scanner consumoCarro = new Scanner(System.in);
+//
+//        for (int contador = 0; contador < modelo.length; contador++) {
+//            System.out.println("modelo do carro : ");
+//            modelo[contador] = modeloCarro.nextLine();
+//
+//        }
+//
+//        for (int contador = 0; contador < consumo.length; contador++) {
+//            System.out.println("consumo do carro : ");
+//            consumo[contador] = consumoCarro.nextInt();
+//        }
+//
+//        for (int contador = 0; contador < consumo.length; contador++) {
+//
+//            if (consumo[contador] > consumoEconomico) {
+//
+//                consumoEconomico = consumo[contador];
+//                indice = contador;
+//            }
+//
+//        }
+//        System.out.println("o carro mais economico é " +  modelo[indice]+ " que faz " + consumoEconomico);
 
-        Scanner modeloCarro = new Scanner(System.in);
-        Scanner consumoCarro = new Scanner(System.in);
+        int[] vet1 = new int[5];
+        int[] vet2 = new int[5];
+        int[] vet3 = new int[10];
 
-        for(int contador = 0; contador <modelo.length; contador++){
-            System.out.println("modelo do carro : ");
-            modelo[contador] = modeloCarro.nextLine();
+        Scanner vetor1 = new Scanner(System.in);
+        Scanner vetor2 = new Scanner(System.in);
+
+        for(int contador = 0; contador<vet1.length;contador++){
+            System.out.println("digite 5 numeros");
+            vet1[contador] = vetor1.nextInt();
+        }
+
+        for(int contador = 0; contador<vet2.length;contador++){
+            System.out.println("digite mais 5 numeros");
+            vet2[contador] = vetor2.nextInt();
+        }
+
+        for(int i = 0; i < vet1.length; i++){
+
+            for(int j = 0; j<vet1.length; j++){
+
+            }
 
         }
 
-        for(int contador = 0; contador<consumo.length; contador++){
-            System.out.println("consumo do carro : ");
-            consumo[contador] = consumoCarro.nextInt();
+        for(int i = 0; i < vet1.length; i++){
+
+            for(int j = 0; j<vet1.length; j++){
+
+            }
+
         }
-
-        for()
-
     }
 }
